@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>0henry</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Scaled Image</title>
     <style>
-        
-        body {
-          background-color:  	#282634;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
+
+        body, html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden; 
+        }
+
+
         img {
-          display:block; position:absolute;
-          top:20%; left:20%; width:60%; height:60%; 
-        } 
+            width: 100vw;      
+            height: 100vh;     
+            object-fit: cover;
+            display: block;   
+        }
+
     </style>
+</head>
+<body>
 
-  <link href="favicon-black.png" rel="icon"/>
+        <img src="0henry.jpg" alt="Sample Scalable Image">
 
-  </head>
-  <body>
-    <img src="henry-logo.svg" alt="logo" />
-  </body>
-
-
+</body>
 </html>
